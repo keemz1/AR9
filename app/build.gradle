@@ -1,0 +1,120 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.ar.sceneform.plugin'
+
+android {
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        applicationId "com.mp.ar9"
+        minSdkVersion 24
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'gr.pantrif:easy-android-splash-screen:0.0.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation "com.google.ar.sceneform.ux:sceneform-ux:1.15.0"
+    implementation "com.google.ar.sceneform:animation:1.15.0"
+    implementation "com.android.support:design:29.0.0"
+    implementation "androidx.fragment:fragment:1.2.0-beta02"
+
+    //Navigation Component
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.2.0-rc03'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.2.0-rc03'
+
+    implementation 'com.android.support:appcompat-v7:29.1.0'
+    implementation 'com.android.support:design:29.1.0'
+
+    //Custom Library
+    implementation 'io.github.yavski:fab-speed-dial:1.0.6'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation 'com.getbase:floatingactionbutton:1.10.1'
+
+    //About Page Creation
+    implementation 'com.github.medyo:android-about-page:1.2.6'
+
+}
+
+
+sceneform.asset('sampledata/heart1.glb',
+        'default',
+        'sampledata/heart1.sfa',
+        'src/main/res/raw/heart1')
+
+sceneform.asset('sampledata/heart2.glb',
+        'default',
+        'sampledata/heart2.sfa',
+        'src/main/res/raw/heart2')
+
+sceneform.asset('sampledata/human_cell.glb',
+        'default',
+        'sampledata/human_cell.sfa',
+        'src/main/res/raw/human_cell')
+
+sceneform.asset('sampledata/plant_cell.glb',
+        'default',
+        'sampledata/plant_cell.sfa',
+        'src/main/res/raw/plant_cell')
+
+
+sceneform.asset('sampledata/brain.obj',
+        'default',
+        'sampledata/brain.sfa',
+        'src/main/res/raw/brain')
+
+sceneform.asset('sampledata/model_mesh.obj',
+        'default',
+        'sampledata/model_mesh.sfa',
+        'src/main/res/raw/model_mesh')
+
+sceneform.asset('sampledata/skull.obj',
+        'default',
+        'sampledata/skull.sfa',
+        'src/main/res/raw/skull')
+
+sceneform.asset('sampledata/ear_canal.glb',
+        'default',
+        'sampledata/ear_canal.sfa',
+        'src/main/res/raw/ear_canal')
+
+sceneform.asset('sampledata/human_eye.glb',
+        'default',
+        'sampledata/human_eye.sfa',
+        'src/main/res/raw/human_eye')
+
+sceneform.asset('sampledata/nerve_cell.glb',
+        'default',
+        'sampledata/nerve_cell.sfa',
+        'src/main/res/raw/nerve_cell')
+
+sceneform.asset('sampledata/dna2.obj',
+        'default',
+        'sampledata/dna2.sfa',
+        'src/main/res/raw/dna2')
+
+
+sceneform.asset('sampledata/brain2.glb',
+        'default',
+        'sampledata/brain2.sfa',
+        'src/main/res/raw/brain2')

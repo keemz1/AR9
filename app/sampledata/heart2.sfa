@@ -1,0 +1,112 @@
+{
+  materials: [
+    {
+      name: 'unnamed material',
+      parameters: [
+        {
+          baseColorFactor: null,
+        },
+        {
+          baseColor: null,
+        },
+        {
+          diffuseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          diffuseColor: '181fe2d546b1eea4382274f962a362ec47fd3567',
+        },
+        {
+          normal: '9e05b9ca0530a5a693013f22502bc1b7fa1e625f',
+        },
+        {
+          metallicFactor: null,
+        },
+        {
+          roughnessFactor: null,
+        },
+        {
+          specularFactor: [
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          glossinessFactor: 1,
+        },
+        {
+          specularGlossiness: '89aa0922fbbb17cb09d93120da3b4ac411333b8a',
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: null,
+        },
+        {
+          occlusion: '693680f9fd34323a07982ed88a7064bf4fb8fc63',
+        },
+        {
+          emissiveFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          emissive: '853912ede6d9a3590fc1814c573e99b5bf047364',
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/heart2.glb',
+    name: 'heart2',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      name: '181fe2d546b1eea4382274f962a362ec47fd3567',
+      pipeline_name: '*3',
+    },
+    {
+      name: '89aa0922fbbb17cb09d93120da3b4ac411333b8a',
+      pipeline_name: '*4',
+    },
+    {
+      name: '693680f9fd34323a07982ed88a7064bf4fb8fc63',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: '*1',
+    },
+    {
+      name: '9e05b9ca0530a5a693013f22502bc1b7fa1e625f',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: '*0',
+    },
+    {
+      name: '853912ede6d9a3590fc1814c573e99b5bf047364',
+      pipeline_name: '*2',
+    },
+  ],
+  version: '0.54:2',
+}

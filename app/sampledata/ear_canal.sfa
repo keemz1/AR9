@@ -1,0 +1,109 @@
+{
+  materials: [
+    {
+      name: 'unnamed material',
+      parameters: [
+        {
+          baseColorFactor: null,
+        },
+        {
+          baseColor: null,
+        },
+        {
+          diffuseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          diffuseColor: 'd4c71e3f678c1eb68a4728fb1f9af5f1f965ed5a',
+        },
+        {
+          normal: '2a0efd4fac0d578c96a83aa8d7997e90fe158d0c',
+        },
+        {
+          metallicFactor: null,
+        },
+        {
+          roughnessFactor: null,
+        },
+        {
+          specularFactor: [
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          glossinessFactor: 1,
+        },
+        {
+          specularGlossiness: 'a6967223f6e6afc811395fee5c7edc5edff7fe54',
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: null,
+        },
+        {
+          occlusion: 'ca121d3e164caaef2b9d45da489b01367bd4018e',
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/ear_canal.glb',
+    name: 'ear_canal',
+    recenter: 'root',
+    scale: 2.2400549999999999,
+  },
+  samplers: [
+    {
+      name: 'd4c71e3f678c1eb68a4728fb1f9af5f1f965ed5a',
+      pipeline_name: '*2',
+    },
+    {
+      name: 'a6967223f6e6afc811395fee5c7edc5edff7fe54',
+      pipeline_name: '*3',
+    },
+    {
+      name: 'ca121d3e164caaef2b9d45da489b01367bd4018e',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: '*1',
+    },
+    {
+      name: '2a0efd4fac0d578c96a83aa8d7997e90fe158d0c',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: '*0',
+    },
+  ],
+  version: '0.54:2',
+}

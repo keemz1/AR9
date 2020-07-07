@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_animalcell"
+            android:title="Animal Cell"
+            android:icon="@drawable/animalcell">
+        </item>
+        <item
+            android:id="@+id/nav_brain"
+            android:title="Brain"
+            android:icon="@drawable/brain">
+        </item>
+        <item
+            android:id="@+id/nav_ear"
+            android:title="Ear"
+            android:icon="@drawable/ear">
+        </item>
+        <item
+            android:id="@+id/nav_eye"
+            android:title="Eye"
+            android:icon="@drawable/eye">
+        </item>
+        <item
+            android:id="@+id/nav_heart"
+            android:title="Heart"
+            android:icon="@drawable/heart">
+        </item>
+        <item
+            android:id="@+id/nav_kidney"
+            android:title="Kidney"
+            android:icon="@drawable/kidney">
+        </item>
+        <item
+            android:id="@+id/nav_plantcell"
+            android:title="Plant Cell"
+            android:icon="@drawable/plantcell">
+        </item>
+        <item
+            android:id="@+id/nav_nerve"
+            android:title="Nerve"
+            android:icon="@drawable/nervecell">
+        </item>
+    </group>
+
+</menu>

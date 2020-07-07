@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mp.ar9">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Suggestions"></activity>
+        <activity android:name=".Notes" />
+        <activity android:name=".GetARInfo" />
+        <activity android:name=".HeartAR" />
+        <activity android:name=".EyeAR" />
+        <activity android:name=".EarAR" />
+        <activity android:name=".NerveCell" />
+        <activity android:name=".ARMainActivity" />
+        <activity android:name=".PlantCellAR" />
+        <activity android:name=".HumanCellAR" />
+        <activity android:name=".BrainAR" />
+        <activity android:name=".InfoActivity" />
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="required" />
+
+        <activity
+            android:name=".HomeScreenActivity"
+            android:theme="@style/HomeScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
